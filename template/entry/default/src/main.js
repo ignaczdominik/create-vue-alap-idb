@@ -9,7 +9,7 @@ import '@/assets/app.scss'
 
 const app = createApp(App)
 
-app.component(Alert, BSAlert)
+app.component('Alert', BSAlert)
 
 app.use(createPinia())
 app.use(router)

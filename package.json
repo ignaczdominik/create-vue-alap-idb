@@ -1,5 +1,5 @@
 {
-  "name": "create-njit-vue",
+  "name": "create-vue-alap-idb",
   "version": "1.23.3",
   "description": "An easy way to start a Vue project",
   "type": "module",
@@ -24,15 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/create-vue.git"
+    "url": "git+https://github.com/ignaczdominik/create-njit-vue.git"
   },
   "keywords": [],
-  "author": "Haoqun Jiang <haoqunjiang+npm@gmail.com>",
+  "author": "Ignácz Dominik Bence <i.dominik+npm@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vuejs/create-vue/issues"
+    "url": "https://github.com/ignaczdominik/create-njit-vue/issues"
   },
-  "homepage": "https://github.com/vuejs/create-vue#readme",
+  "homepage": "https://github.com/ignaczdominik/create-njit-vue#readme",
   "devDependencies": {
     "@types/eslint": "^8.21.1",
     "@types/node": "^18.14.2",

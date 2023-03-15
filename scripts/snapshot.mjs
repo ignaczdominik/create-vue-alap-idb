@@ -19,5 +19,5 @@ for (const flags of flagCombinations) {
   await $`rm -rf ${projectName}`
 
   console.log(`Creating project ${projectName}`)
-  await $`node ${[bin, projectName,  '--force']}`
+  await $`node ${[bin, projectName, '--force']}`
 }

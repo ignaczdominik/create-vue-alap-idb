@@ -19,7 +19,7 @@ Első indítás alkalmával:
 npm install
 ```
 
-Egyéb csomagok telepítése: 
+Egyéb csomagok telepítése:
 
 ```bash
 npm install <csomag_neve>
@@ -53,7 +53,6 @@ Ahhoz, hogy ellenőrizni tudd, hogy helyesen működik az alkalmazásod, a köve
 npm run preview
 ```
 
-
 ## Mappaszerkezet {#directory}
 
 - `components`: Újrahasnosítható komponensek
@@ -67,7 +66,6 @@ npm run preview
 - `utils`: Kiegészítű scriptek, pl.: Axios
 
 ## Tesztelés {#testing}
-
 
 A következő parancs segítségével le tudod futtatni a unit teszteket a projektben és ezek sikerességét egy megnyiló oldaon tudod megtekinteni.
 

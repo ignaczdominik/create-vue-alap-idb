@@ -1,8 +1,8 @@
-import {defineRule} from 'vee-validate';
+import { defineRule } from 'vee-validate'
 
-defineRule('requiredRule',(value)=>{
-  if(!value || value === ""){
-    return "A mező kitöltése kötelező!"
+defineRule('requiredRule', (value) => {
+  if (!value || value === '') {
+    return 'A mező kitöltése kötelező!'
   }
-  return true;
+  return true
 })
