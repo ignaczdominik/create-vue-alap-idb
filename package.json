@@ -1,6 +1,6 @@
 {
-  "name": "create-vue",
-  "version": "3.6.1",
+  "name": "create-njit-vue",
+  "version": "1.23.3",
   "description": "An easy way to start a Vue project",
   "type": "module",
   "bin": {
@@ -11,7 +11,7 @@
     "template"
   ],
   "engines": {
-    "node": "^14.18.0 || >=16.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "prepare": "husky install",

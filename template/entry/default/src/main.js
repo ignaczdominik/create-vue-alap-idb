@@ -1,6 +1,17 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import { createPinia } from 'pinia'
+import { router } from '@/router/index.js'
+import App from '@/App.vue'
+import BSAlert from '@/components/bootstrap/BSAlert.vue'
 
-import './assets/main.css'
+import 'bootstrap'
+import '@/assets/app.scss'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.component(Alert, BSAlert)
+
+app.use(createPinia())
+app.use(router)
+
+app.mount('#app')

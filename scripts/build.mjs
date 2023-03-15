@@ -30,7 +30,7 @@ await esbuild.build({
   outfile: 'outfile.cjs',
   format: 'cjs',
   platform: 'node',
-  target: 'node14',
+  target: 'node16',
 
   plugins: [
     {
