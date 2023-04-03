@@ -45,6 +45,11 @@
               <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
+          <div class="me-2">
+            <select v-model="$i18n.locale" @change="onChange($i18n.locale)">
+              <option :value="locale">{{ locale }}</option>
+            </select>
+          </div>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -60,4 +65,8 @@
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+function onChange(locale) {
+  localStorage.setItem('locale', locale)
+}
+</script>
