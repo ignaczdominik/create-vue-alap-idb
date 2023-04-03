@@ -46,7 +46,7 @@
             </li>
           </ul>
           <div class="me-2">
-            <select v-model="$i18n.locale" @change="onChange($i18n.locale)">
+            <select v-model="$i18n.locale" @change="onChange($i18n.locale)" class="form-select">
               <option v-for="locale in $i18n.availableLocales" :value="locale">{{ locale }}</option>
             </select>
           </div>
