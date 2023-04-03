@@ -47,7 +47,7 @@
           </ul>
           <div class="me-2">
             <select v-model="$i18n.locale" @change="onChange($i18n.locale)">
-              <option :value="locale">{{ locale }}</option>
+              <option v-for="locale in $i18n.availableLocales" :value="locale">{{ locale }}</option>
             </select>
           </div>
           <form class="d-flex" role="search">
