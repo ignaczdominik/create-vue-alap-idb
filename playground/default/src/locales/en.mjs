@@ -1,7 +1,7 @@
 export default {
   pages: {
     home: {
-      hello: 'Helló!',
+      hello: 'Hello!',
       counter: 'The counter is {n}'
     }
   },
