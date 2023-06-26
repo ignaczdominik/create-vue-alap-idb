@@ -1,4 +1,6 @@
+import {useHead} from "@vueuse/head";
+
 export function setTitle(to, from, next) {
-  document.title = to.meta.title
+  useHead().title = to.meta.title;
   next()
 }

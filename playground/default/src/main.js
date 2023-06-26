@@ -1,30 +1,28 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { router } from '@/router/index.js'
+import { plugin, defaultConfig } from '@formkit/vue'
+
 import App from '@/App.vue'
 import BSAlert from '@/components/bootstrap/BSAlert.vue'
-import { createI18n } from 'vue-i18n'
-
-import hu from '@/locales/hu.mjs'
-import en from '@/locales/en.mjs'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 import 'bootstrap'
 import '@/assets/app.scss'
 
-const messages = { hu, en }
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
 
-const i18n = createI18n({
-  messages,
-  locale: localStorage.getItem('localhost') ?? 'hu',
-  fallbackLocal: 'en'
-})
-
+/* Create application instance */
 const app = createApp(App)
 
+/* Set global components */
 app.component('Alert', BSAlert)
 
-app.use(i18n)
-app.use(createPinia())
+/* Setup and configure plugins */
+app.use(plugin, defaultConfig)
+app.use(pinia)
 app.use(router)
 
+/* Mount the app instance to the DOM */
 app.mount('#app')

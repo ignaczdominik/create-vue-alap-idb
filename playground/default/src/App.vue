@@ -1,11 +1,13 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import VNav from '@/components/layout/BSNavBar.vue'
-import VFooter from '@/components/layout/Footer.vue'
+import TheHeader from '@/components/layout/TheHeader.vue'
+import TheFooter from '@/components/layout/TheFooter.vue'
 </script>
 
 <template>
-  <v-nav />
-  <router-view />
-  <v-footer />
+  <TheHeader />
+  <main class="container container-fluid">
+    <RouterView />
+  </main>
+  <TheFooter />
 </template>

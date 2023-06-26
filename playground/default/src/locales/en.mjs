@@ -1,12 +1,16 @@
-export default {
-  pages: {
-    home: {
-      hello: 'Hello!',
-      counter: 'The counter is {n}'
+export default{
+    pages: {
+        home: {
+            hello: 'Szia!',
+            counter: 'A számláló jelenleg: {n}'
+        }
+    },
+    layout:{
+        header:{
+
+        },
+        footer:{
+
+        }
     }
-  },
-  layout: {
-    header: {},
-    footer: {}
-  }
 }
