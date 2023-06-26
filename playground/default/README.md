@@ -1,15 +1,15 @@
-# Vue alap | 2023.3
+# Vue alap | 2023.6
 
 > Az alap tartalmaz minden olyan csomagot amely az órai feladatok elkészítéséhez szükséges.
 
-## Tartalom {#content}
+## Tartalom
 
-- [Tartalom](#content)
-- [Node és a Vite kezelése](#vite)
-- [Mappaszerkezet](#directory)
-- [Tesztelés](#testing)
+- [Tartalom](#tartalom)
+- [Node és a Vite kezelése](#node-és-a-vite-kezelése)
+- [Mappaszerkezet](#mappaszerkezet)
+- [Tesztelés](#tesztelés)
 
-## Node és a Vite kezelése {#vite}
+## Node és a Vite kezelése
 
 ### Telepítés
 
@@ -53,19 +53,19 @@ Ahhoz, hogy ellenőrizni tudd, hogy helyesen működik az alkalmazásod, a köve
 npm run preview
 ```
 
-## Mappaszerkezet {#directory}
+## Mappaszerkezet
 
 - `components`: Újrahasnosítható komponensek
   - `bootstrap`: Bootstrap elemek alapján készült komponensek
   - `layout`: Az olal elrendezéséhez tartozó komponensek (Navbar, Footer)
-- `pages`: Az oldalakat tartalmazó komponensek
 - `router`: Routerhez tartozó scriptek
   - `guards`: Router Guardokat tartalmazó scriptek
 - `stores`: Pinia tárolók
 - `test`: Unit tesztek
 - `utils`: Kiegészítű scriptek, pl.: Axios
+- `views`: Az oldalakat tartalmazó komponensek
 
-## Tesztelés {#testing}
+## Tesztelés
 
 A következő parancs segítségével le tudod futtatni a unit teszteket a projektben és ezek sikerességét egy megnyiló oldaon tudod megtekinteni.
 

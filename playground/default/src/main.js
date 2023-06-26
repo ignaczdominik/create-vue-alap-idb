@@ -1,14 +1,14 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { router } from '@/router/index.js'
+import { router } from '@router/index.js'
 import { plugin, defaultConfig } from '@formkit/vue'
 
 import App from '@/App.vue'
-import BSAlert from '@/components/bootstrap/BSAlert.vue'
+import BSAlert from '@components/bootstrap/BSAlert.vue'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 import 'bootstrap'
-import '@/assets/app.scss'
+import '@assets/app.scss'
 
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)

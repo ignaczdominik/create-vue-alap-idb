@@ -1,5 +1,5 @@
 <script setup>
-import { useCounter } from '@/stores/CounterStore.mjs'
+import { useCounter } from '@stores/CounterStore.mjs'
 
 const CounterStore = useCounter()
 </script>
