@@ -1,6 +1,6 @@
 {
   "name": "create-vue-alap-idb",
-  "version": "1.23.3",
+  "version": "1.24.2",
   "description": "An easy way to start a Vue project",
   "type": "module",
   "bin": {
