@@ -5,9 +5,7 @@
   <main class="container">
     <slot />
   </main>
-  <footer>
-    <BaseFooter />
-  </footer>
+  <BaseFooter />
 </template>
 <script>
 import BSNavBar from '@components/layout/BSNavBar.vue'
