@@ -65,16 +65,3 @@ npm run preview
 - `test`: Unit tesztek
 - `utils`: Kiegészítű scriptek, pl.: Axios
 
-## Tesztelés {#testing}
-
-A következő parancs segítségével le tudod futtatni a unit teszteket a projektben és ezek sikerességét egy megnyiló oldaon tudod megtekinteni.
-
-```bash
-npm run test
-```
-
-A következő parancs a teszt lefedettségét fogja ellenőrizni neked:
-
-```bash
-npm run test:coverage
-```

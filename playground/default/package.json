@@ -1,15 +1,12 @@
 {
   "name": "default",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "preview": "vite preview"
   },
-  "dependencies": {
+  "devDependencies": {
     "@formkit/i18n": "1.5.2",
     "@formkit/vue": "1.5.2",
     "@vitejs/plugin-vue": "^5.0.3",
@@ -23,15 +20,5 @@
     "vue": "^3.4.15",
     "vue-i18n": "^9.9.0",
     "vue-router": "^4.2.5"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vitest/coverage-c8": "^0.29.2",
-    "@vitest/ui": "^0.29.2",
-    "@vue/test-utils": "^2.3.1",
-    "c8": "7.13.0",
-    "jsdom": "^21.1.1",
-    "vite": "^4.1.4",
-    "vitest": "^0.29.2"
   }
 }
