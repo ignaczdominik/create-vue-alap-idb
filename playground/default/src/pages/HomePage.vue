@@ -1,5 +1,5 @@
 <template>
-  <BaseLayout class="text-center">
+  <BaseLayout>
     <h1 class="display-1 my-5">Hello!</h1>
     <button class="btn btn-success" @click="useCounter().increment()">
       Számláló: {{ useCounter().counter }}
