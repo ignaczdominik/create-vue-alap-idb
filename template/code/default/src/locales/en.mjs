@@ -1,8 +1,8 @@
 export default{
     pages: {
         home: {
-            hello: 'Szia!',
-            counter: 'A számláló jelenleg: {n}'
+            hello: 'Hi!',
+            counter: 'The counter is at {n} now.'
         }
     },
     layout:{

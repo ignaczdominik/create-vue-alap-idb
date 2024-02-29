@@ -165,7 +165,6 @@ async function init() {
 
   // Render base template
   render('base')
-  render('config/default')
   render(`code/default`)
   render('entry/default')
 

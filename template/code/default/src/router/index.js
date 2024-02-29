@@ -6,7 +6,7 @@ export const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/pages/HomePage.vue'),
+      component: () => import('@pages/HomePage.vue'),
       meta: {
         requiresAuth: false,
         title: 'Főoldal'
