@@ -1,8 +1,8 @@
 <template>
-  <nav class="bg-white">
-    <div class="flex">
-      <RouterLink :to="{ name: 'index' }" class="flex items-center space-x-3">
-        <span class="self-center text-2xl font-semibold dark:text-white">Brand</span>
+  <nav class="bg-white dark:bg-gray-800">
+    <div class="flex justify-between p-3 border-b-2 flex-wrap dark:border-none">
+      <RouterLink to="/" class="flex items-center space-x-3">
+        <span class="self-center text-2xl font-semibold dark:text-white">Feladat</span>
       </RouterLink>
       <button class="block md:hidden" @click="toggleMenu">
         <svg
@@ -21,9 +21,9 @@
           />
         </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto">
+      <div class="w-full md:block md:w-auto" :class="{ hidden: !menuOpen }">
         <ul class="menu">
-          <li class="menuitem"><RouterLink to="#">Item 1</RouterLink></li>
+          <li class="menuitem"><RouterLink to="#">1. oldal</RouterLink></li>
         </ul>
       </div>
     </div>
@@ -46,7 +46,11 @@ function toggleMenu() {
   @apply md:flex-row md:p-0 md:space-x-8;
 }
 .menuitem {
-  @apply block py-2 px-3 text-gray-900;
-  @apply hover:bg-blue-500 text-white;
+  @apply block py-2 px-3 text-gray-900 dark:text-white;
+  @apply hover:bg-blue-400 hover:text-white rounded p-2;
+}
+
+.menuitem:has(.active) {
+  @apply bg-blue-500 text-white;
 }
 </style>

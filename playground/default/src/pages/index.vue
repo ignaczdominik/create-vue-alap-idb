@@ -1,7 +1,7 @@
 <template>
   <BaseLayout>
-    <h1 class="text-4xl my-10">Hello!</h1>
-    <button class="bg-green-700 text-white rounded" @click="increment()">
+    <h1 class="text-6xl my-10 dark:text-white">Hello!</h1>
+    <button class="bg-blue-500 text-white rounded py-2 px-4" @click="increment()">
       Számláló: {{ counter }}
     </button>
   </BaseLayout>
