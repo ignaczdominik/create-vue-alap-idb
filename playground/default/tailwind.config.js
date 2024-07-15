@@ -4,5 +4,10 @@ export default {
   theme: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    import('@tailwindcss/aspect-ratio'),
+    import('@tailwindcss/container-queries'),
+    import('@tailwindcss/forms'),
+    import('@tailwindcss/typography')
+  ]
 }
