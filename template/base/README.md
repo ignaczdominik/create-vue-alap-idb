@@ -1,4 +1,4 @@
-# Vue alap | 2023.3
+# Vue alap | 2024.1
 
 > Az alap tartalmaz minden olyan csomagot amely az órai feladatok elkészítéséhez szükséges.
 
@@ -56,7 +56,6 @@ npm run preview
 ## Mappaszerkezet {#directory}
 
 - `components`: Újrahasnosítható komponensek
-  - `bootstrap`: Bootstrap elemek alapján készült komponensek
   - `layout`: Az olal elrendezéséhez tartozó komponensek (Navbar, Footer)
 - `pages`: Az oldalakat tartalmazó komponensek
 - `router`: Routerhez tartozó scriptek

@@ -6,7 +6,6 @@ import { plugin, defaultConfig } from '@formkit/vue'
 
 import App from '@/App.vue'
 
-import 'bootstrap'
 import '@assets/app.scss'
 
 const app = createApp(App)

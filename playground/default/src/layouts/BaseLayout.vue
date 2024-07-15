@@ -1,19 +1,14 @@
 <template>
-  <header>
-    <BSNavBar />
-  </header>
-  <main class="container">
+  <BaseHeader />
+  <main class="container mx-auto">
     <slot />
   </main>
-  <BaseFooter />
 </template>
 <script>
-import BSNavBar from '@components/layout/BSNavBar.vue'
-import BaseFooter from '@components/layout/BaseFooter.vue'
+import BaseHeader from '@components/layout/BaseHeader.vue'
 export default {
   components: {
-    BSNavBar,
-    BaseFooter
+    BaseHeader
   }
 }
 </script>

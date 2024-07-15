@@ -1,12 +1,13 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import devtools from 'vite-plugin-vue-devtools'
+
+import Vue from '@vitejs/plugin-vue'
+import VueDevtools from 'vite-plugin-vue-devtools'
+import VueRouter from 'unplugin-vue-router/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), devtools()],
+  plugins: [Vue(), VueDevtools(), VueRouter()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -16,8 +17,7 @@ export default defineConfig({
       '@locales': fileURLToPath(new URL('./src/locales', import.meta.url)),
       '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
       '@stores': fileURLToPath(new URL('./src/stores', import.meta.url)),
-      '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
-      '~bootstrap': fileURLToPath(new URL('./node_modules/bootstrap', import.meta.url))
+      '@utils': fileURLToPath(new URL('./src/utils', import.meta.url))
     }
   }
 })
