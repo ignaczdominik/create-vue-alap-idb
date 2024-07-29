@@ -46,11 +46,11 @@ function toggleMenu() {
   @apply md:flex-row md:p-0 md:space-x-8;
 }
 .menuitem {
-  @apply block py-2 px-3 text-gray-900 dark:text-white;
+  @apply block py-2 px-3 text-gray-500;
   @apply hover:bg-blue-400 hover:text-white rounded p-2;
 }
 
 .menuitem:has(.active) {
-  @apply bg-blue-500 text-white;
+  @apply text-blue-500;
 }
 </style>

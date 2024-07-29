@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -23,6 +25,8 @@
     "autoprefixer": "10.4.19",
     "axios": "1.7.2",
     "date-fns": "3.6.0",
+    "eslint": "9.8.0",
+    "eslint-plugin-vue": "9.27.0",
     "pinia": "2.1.7",
     "pinia-plugin-persistedstate": "3.2.1",
     "postcss": "8.4.39",

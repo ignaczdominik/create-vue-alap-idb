@@ -55,7 +55,7 @@ npm run preview
 
 ## Mappaszerkezet {#directory}
 
-- `components`: Újrahasnosítható komponensek
+- `components`: Újrahasznosítható komponensek
   - `layout`: Az olal elrendezéséhez tartozó komponensek (Navbar, Footer)
 - `pages`: Az oldalakat tartalmazó komponensek
 - `router`: Routerhez tartozó scriptek

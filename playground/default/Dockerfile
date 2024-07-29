@@ -27,4 +27,4 @@ RUN npm cache add postcss@8.4.3
 
 RUN npm i
 
-CMD npm run dev
+CMD ["npm", "run", "dev"]
