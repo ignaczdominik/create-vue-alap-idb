@@ -52,5 +52,6 @@ function toggleMenu() {
 
 .menuitem:has(.active) {
   @apply text-blue-500;
+  @apply hover:text-white;
 }
 </style>
